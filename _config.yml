@@ -2,5 +2,4 @@ name: 'Live, Laugh, Code'
 description: A blog for my life.
 author: Corey Weiner
 author_email: cjweiner@gmail.com
-baseurl: /llc
-url: corey-weiner.com
+permalink: /llc/:year/:month/:day/:title.html
