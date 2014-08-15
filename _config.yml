@@ -1,5 +1,48 @@
-name: 'Live, Laugh, Code'
-description: A blog for my life.
-author: Corey Weiner
-author_email: cjweiner@gmail.com
-permalink: /llc/:year/:month/:day/:title.html
+# Dependencies
+highlighter: pygments
+
+# Permalinks
+permalink: /llc/:year/:month/:title
+
+# Setup
+title: 'Live, Laugh, Code!'
+tagline: 'blogging'
+description: 'My personal blog.'
+url: http://corey-weiner.com
+paginate_path: /llc/page:num
+commentsystem: disqus
+disqus: example
+
+
+author:
+  name: 'Corey Weiner'
+  url: 	http://www.twitter.com/cjweiner
+
+paginate: 1
+
+icon: 
+cover: 
+
+social:
+   icon: twitter
+   url: https://twitter.com/cjweiner
+   desc: Follow me on twitter
+
+   icon: github
+   url: https://github.com/cjweiner
+   desc: Fork me on github
+
+menu:
+   title: Home
+   url: /
+
+   title: About
+   url: /about
+
+   title: Portfolio
+   url: /portfolio
+
+copyright:
+   author: Weiner
+   type_title: Some rights reserved
+   type_url: http://creativecommons.org/licenses/by-nc/2.5
