@@ -18,7 +18,7 @@ author:
   name: 'Corey Weiner'
   url: 	http://www.twitter.com/cjweiner
 
-paginate: 1
+paginate: 5
 
 icon: /assets/images/icon.png
 cover: /assets/images/cover.jpg
