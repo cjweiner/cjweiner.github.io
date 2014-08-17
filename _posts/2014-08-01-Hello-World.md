@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello, World"
-quote: ""
+quote: "In the beginning there was binary"
 image: false
 video: false
 comments: false

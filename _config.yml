@@ -20,27 +20,27 @@ author:
 
 paginate: 1
 
-icon: 
-cover: 
+icon: /assets/images/icon.png
+cover: /assets/images/cover.jpg
 
 social:
-   icon: twitter
-   url: https://twitter.com/cjweiner
-   desc: Follow me on twitter
+  - icon:	twitter
+    url:	https://twitter.com/cjweiner
+    desc:	Follow me on twitter
 
-   icon: github
-   url: https://github.com/cjweiner
-   desc: Fork me on github
+  - icon:	github
+    url:	https://github.com/cjweiner
+    desc:	Fork me on github
 
 menu:
-   title: Home
-   url: /
+  - title: Home
+    url: /
 
-   title: About
-   url: /about
+  - title: About
+    url: /about
 
-   title: Portfolio
-   url: /portfolio
+  - title: Portfolio
+    url: /portfolio
 
 copyright:
    author: Weiner
