@@ -1,4 +1,18 @@
 <div class="social-links" data-stellar-ratio="0.1">
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+                <a href="#page-top"></a>
+            </li>
+			{% for item in site.menu %}
+	        	<li>
+	        		<a href="{{ item.url}}" title="{{ item.title }}"> {{ item.title }}</span></a>
+	        	</li>
+			{% endfor %}
+        </ul>
+    </div>
+
 	{% for social in site.social %}
 		<a href="{{ social.url }}" target="_blank" title="{{ social.desc }}"><span class="genericon genericon-{{ social.icon }}"></span></a>
 	{% endfor %}

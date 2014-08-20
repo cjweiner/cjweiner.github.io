@@ -1,1 +1,14 @@
-Under Construction....
+---
+layout: default
+title: Home
+---
+
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %}); height: 100%;">
+	{% include top.html %}
+</header>
+<div class="middle">
+	Under construction...
+</div>
+<footer class="clean footer" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+	{% include copyright.html %}
+</footer>
