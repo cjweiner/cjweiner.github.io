@@ -3,6 +3,7 @@ highlighter: pygments
 
 # Permalinks
 permalink: /llc/:year/:month/:title
+permaklink: /404.html
 
 # Setup
 title: 'Live, Laugh, Code!'
@@ -46,3 +47,5 @@ copyright:
    author: Weiner
    type_title: Some rights reserved
    type_url: http://creativecommons.org/licenses/by-nc/2.5
+
+google_analytics: UA-53933218-1
