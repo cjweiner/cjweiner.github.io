@@ -7,7 +7,7 @@ permaklink: /404.html
 
 # Setup
 title: 'CoreyWeiner'
-tagline: 'blogging'
+tagline: 
 description: 'My personal blog.'
 url: http://corey-weiner.com
 paginate_path: /llc/page:num
@@ -42,6 +42,8 @@ menu:
 
   - title: Portfolio
     url: /portfolio
+  - title: Blog
+    url: /llc
 
 copyright:
    author: Weiner

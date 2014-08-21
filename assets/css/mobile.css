@@ -98,3 +98,14 @@ table {
 	display: block;
 	overflow: auto;
 }
+.homepage-container .alignCenter{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 50%;
+	margin: 0 auto;
+	bottom: 30%;
+	text-shadow: 0 0 15px rgba(0,0,0,1);
+	-webkit-font-smoothing: antialiased;
+	color: #fff;
+}

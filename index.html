@@ -1,14 +1,35 @@
 ---
 layout: default
 title: Home
+image: "/assets/images/homepageCover.jpg"
 ---
-
-<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %}); height: 100%;">
-	{% include top.html %}
+<header id="#" class="clean" style="height:100%;" >
+	<div class="homepage-fullscreen-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %})"></div>
+	<section id="#">
+		{% include top.html %}
+		<div class="homepage-container">
+			<div class='alignCenter'>
+				<h1 class="homepage-quote">"The world is full of 0's and 1's."</h1>
+				<div class="homepage-image" style="background-image: url({{ site.icon }});">
+					<a href="{{ site.url }}"></a>
+				</div>
+				<h2 class='homepage-name'>Hey, I'm Corey Weiner</h2>
+				<div class="homepage-credit">〈 <a href="#about">Software Developer, Gamer & Maker</a> 〉</div>
+			</div>
+		</div>
+		{% include copyright.html %}
+	</section>
+	<section class="clean" style="height:100%; background-color:black">
+		<div class="homepage-container-about">
+			<a id="about"></a>
+			<div class='alignCenter'>
+				<h1 class="homepage-quote">"About...."</h1>
+				<div class="homepage-image" style="background-image: url({{ site.icon }});" data-stellar-ratio="1">
+					<a href="{{ site.url }}"></a>
+				</div>
+				<h2 class='homepage-name'>Hey, I'm Corey Weiner</h2>
+				<div class="homepage-credit">〈 <a href="#about">Software Developer, Gamer & Maker</a> 〉</div>
+			</div>
+		</div>
+	</section>
 </header>
-<div class="middle">
-	Under construction...
-</div>
-<footer class="clean footer" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
-	{% include copyright.html %}
-</footer>
