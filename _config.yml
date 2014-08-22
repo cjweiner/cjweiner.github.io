@@ -7,13 +7,17 @@ permaklink: /404.html
 
 # Setup
 title: 'CoreyWeiner'
-tagline: 
-description: 'My personal blog.'
+tagline:  "The world is full of 0's and 1's"
+description: 'My personal website'
 url: http://corey-weiner.com
 paginate_path: /llc/page:num
 commentsystem: disqus
 disqus: example
 
+
+# Gems
+gems:
+  - jekyll-sitemap
 
 author:
   name: 'Corey Weiner'

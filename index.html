@@ -3,7 +3,7 @@ layout: default
 title: Home
 image: "/assets/images/homepageCover.jpg"
 ---
-<header id="#" class="clean" style="height:100%;" >
+<header class="clean" style="height:100%;" >
 	<div class="homepage-fullscreen-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %})"></div>
 	<section id="#">
 		{% include top.html %}
@@ -19,17 +19,5 @@ image: "/assets/images/homepageCover.jpg"
 		</div>
 		{% include copyright.html %}
 	</section>
-	<section class="clean" style="height:100%; background-color:black">
-		<div class="homepage-container-about">
-			<a id="about"></a>
-			<div class='alignCenter'>
-				<h1 class="homepage-quote">"About...."</h1>
-				<div class="homepage-image" style="background-image: url({{ site.icon }});" data-stellar-ratio="1">
-					<a href="{{ site.url }}"></a>
-				</div>
-				<h2 class='homepage-name'>Hey, I'm Corey Weiner</h2>
-				<div class="homepage-credit">〈 <a href="#about">Software Developer, Gamer & Maker</a> 〉</div>
-			</div>
-		</div>
-	</section>
+    {% include homepage-about.html %}
 </header>
