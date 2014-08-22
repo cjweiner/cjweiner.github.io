@@ -1,22 +1,14 @@
 <section id="homepage-about" class="clean" style="height:100%; background-color:black">
     <div class="homepage-container-about">
         <a id="about"></a>
-        <header class="clean" style="height: 10em;">
-            &nbsp;
-        </header>
-        <div class='middle'>
-            <h1 class="homepage-quote">About</h1>
-            <div class="" style="" data-stellar-ratio="2">
-                {% for item in site.pages%}
-                {% if item.url contains "about" %}
-                <h4>{{ item.title }}</h4>
-                {{ item.content | strip_html | truncatewords: 50 }}
-                {% endif %}
-                {% endfor %}
-            </div>
+        <h1 class="homepage-quote">About</h1>
+        <div class="" style="">
+            {% for item in site.pages%}
+            {% if item.url contains "about" %}
+            <h4>{{ item.title }}</h4>
+            {{ item.content | strip_html | truncatewords: 50 }}
+            {% endif %}
+            {% endfor %}
         </div>
-        <footer clas="footer">
-
-        </footer>
     </div>
 </section>
