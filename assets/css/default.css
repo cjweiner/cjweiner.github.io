@@ -186,6 +186,13 @@ img {
   	transform: translateY(-50%);
 }
 
+.circular{
+	width:200px;
+	height:200px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
 
 .homepage-quote{
 	font-family: 'Dancing Script', cursive;

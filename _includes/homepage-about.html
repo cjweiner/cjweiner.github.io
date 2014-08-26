@@ -1,14 +1,17 @@
 <section id="homepage-about" class="clean" >
+    <a id="about"></a>
     <div class="homepage-container-about">
-        <a id="about"></a>
         <h1 class="homepage-quote">About</h1>
         <div class="" style="">
-            {% for item in site.pages%}
-                {% if item.url contains "about" %}
-                <h4>{{ item.title }}</h4>
-                {{ item.content | strip_html | truncatewords: 50 }}
-                {% endif %}
-            {% endfor %}
+            <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200">
+            <p>
+                {% for item in site.pages%}
+                    {% if item.url contains "about" %}
+                    <h4>{{ item.title }}</h4>
+                    {{ item.content | strip_html | truncatewords: 50 }}
+                    {% endif %}
+                {% endfor %}
+            </p>
         </div>
     </div>
 </section>
