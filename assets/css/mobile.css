@@ -109,3 +109,9 @@ table {
 	-webkit-font-smoothing: antialiased;
 	color: #fff;
 }
+.homepage-credit{
+	color:#fff;
+	font-size: 18px;
+	font-weight: 200;
+	font-family: 'Dancing Script', cursive;
+}

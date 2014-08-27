@@ -41,12 +41,16 @@ menu:
     url: /
 
   - title: About
-    url: /about
+    url: /#about
 
   - title: Portfolio
     url: /portfolio
+
   - title: Blog
     url: /llc
+
+  - title: Contact
+    url: /#contact
 
 copyright:
    author: Weiner

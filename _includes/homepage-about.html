@@ -1,17 +1,57 @@
 <section id="homepage-about" class="clean" >
     <a id="about"></a>
     <div class="homepage-container-about">
-        <h1 class="homepage-quote">About</h1>
-        <div class="" style="">
-            <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200">
-            <p>
-                {% for item in site.pages%}
-                    {% if item.url contains "about" %}
-                    <h4>{{ item.title }}</h4>
-                    {{ item.content | strip_html | truncatewords: 50 }}
-                    {% endif %}
-                {% endfor %}
-            </p>
+        <h1 class="homepage-quote">About Me</h1>
+        <div class="homepage-about-content">
+            <div id="about-content-left" style="display:inline-block;width:15%;margin-right:10px;">
+                <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200" align="right">
+            </div>
+            <div id="about-content-right" style="text-align:left; display: inline-block; vertical-align:top; width:75%">
+                <section id="about-who" style="width:85%;">
+                    <h3>Who I Am</h3>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi ut nulla lobortis, quis congue risus varius. Integer sagittis sodales elit non pellentesque. Morbi non aliquam ipsum, at tincidunt risus. Vivamus efficitur, purus ac imperdiet ultrices, ante arcu scelerisque lacus, eget eleifend dolor massa in nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam consequat lectus euismod eros mollis rutrum ut sit amet nulla. Proin quis felis gravida, placerat metus et, blandit lectus. Donec aliquet a tortor imperdiet congue. Pellentesque ante purus, consequat id suscipit sit amet, aliquam at augue. Sed tincidunt in felis vitae iaculis. Aliquam placerat dui a lectus egestas, ut tristique orci pretium. Donec ac nulla lorem.
+                    </p>
+                </section>
+                <section id="about-facts" style="width:85%">
+                    <h3>Facts about me</h3>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi ut nulla lobortis, quis congue risus varius. Integer sagittis sodales elit non pellentesque.
+                        <ul>
+                            <li> Lorem ipsum dolor sit amet </li>
+                            <li> Sed convallis mi </li>
+                            <li> Vivamus efficitur, purus ac</li>
+                        <ul>
+                    <p>
+                </section>
+                <div style="display:flex; flex-flow:row;  justify-content: flex-start;">
+                    <section id="about-skills" style="width:35%;">
+                        <h3>Skills</h3>
+                        <hr>
+                        <div style="width:90%; overflow:hidden;">
+                            <div style="display:inline;">
+                                <div class="skillbar" style="width: 85%;background-color: blue;display: inline-block;padding: 5px;"><label>C#</label></div>
+                                <div style="">85%</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="about-contact" style="width:45%;padding-left:5%;">
+                        <h3>Reach Out</h3>
+                        <hr>
+                        <a href="mailto:cjweiner@gmail.com" class="social-links-menu" target="_blank" title="email">
+                            <span class="genericon genericon-mail" style="font-size:45px;width:45px;height:45px;"></span>
+                        </a>
+                        {% for social in site.social %}
+                        <a href="{{ social.url }}" class="social-links-menu" target="_blank" title="{{ social.desc }}">
+                            <span class="genericon genericon-{{ social.icon }}" style="font-size:45px;width:45px;height:45px;"></span>
+                        </a>
+                        {% endfor %}
+                    </section>
+                    <div></div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
