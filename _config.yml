@@ -36,6 +36,14 @@ social:
     url:	https://github.com/cjweiner
     desc:	Fork me on github
 
+  - icon: googleplus-alt
+    url: https://google.com/+CoreyWeiner09
+    desc: Add me to your circle
+
+  - icon: linkedin-alt
+    url: https://www.linkedin.com/pub/corey-weiner/26/759/348
+    desc: Connect with me on LinkedIn
+
 menu:
   - title: Home
     url: /
