@@ -1,60 +1,79 @@
-<section id="homepage-about" class="clean" >
+<div style="clear:both;"></div>
+<section id="homepage-about" class="clean"  data-stellar-horizontal-offset="50" data-stellar-background-ratio="0.5">
     <a id="about"></a>
+    <!--<div class="homepage-fullscreen-image"style="-webkit-filter:none;filter:none;background-image: url(/assets/images/metro1.jpg)" ></div>-->
     <div class="homepage-container-about">
         <h1 class="homepage-quote">About Me</h1>
         <div class="homepage-about-content">
-            <div id="about-content-left" style="display:inline-block;width:15%;margin-right:10px;">
-                <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200" align="right">
+            <div id="about-content-left" style="display:inline-block;margin-right: 40px;">
+                <ul class="image-list">
+                    <li>
+                        <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200" align="" style="z-index: 5;position: relative;">
+                    </li>
+                    <li style="position: relative;left: 40px;top: -60px;">
+                        <img class="image-container1" src="/assets/images/code1.jpg">
+                    </li>
+                    <li style="position: relative;left: 0px;top: -116px;">
+                        <img class="image-container2" src="/assets/images/code2.jpg">
+                    </li>
+                </ul>
             </div>
             <div id="about-content-right" style="text-align:left; display: inline-block; vertical-align:top; width:75%">
                 <section id="about-who" style="width:85%;">
-                    <h3>Who I Am</h3>
+                    <h3>I Am</h3>
                     <hr>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis mi ut nulla lobortis, quis congue risus varius. Integer sagittis sodales elit non pellentesque. Morbi non aliquam ipsum, at tincidunt risus. Vivamus efficitur, purus ac imperdiet ultrices, ante arcu scelerisque lacus, eget eleifend dolor massa in nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam consequat lectus euismod eros mollis rutrum ut sit amet nulla. Proin quis felis gravida, placerat metus et, blandit lectus. Donec aliquet a tortor imperdiet congue. Pellentesque ante purus, consequat id suscipit sit amet, aliquam at augue. Sed tincidunt in felis vitae iaculis. Aliquam placerat dui a lectus egestas, ut tristique orci pretium. Donec ac nulla lorem.
+                    A Software Developer, Gamer and Maker. I was born and raised in Western Massachusetts and grew up in a small town. I attended <a href="http://champlain.edu">Champlain College</a> in Burlington Vt where I graduated in 2012 with a Bachelors in Game Programming. I have been doing this software development thing now for seven years.
                     </p>
+                    <p>
+                    When I'm not at work I am working on side projects. Outside of programming I love to enjoy a good beer and catch a game of hockey on the TV. If I'm not watching hockey or tinkering with a side project I'm likely gaming: FPS, Strategy, or even just a casual Puzzler, I enjoy them all.
+                    </P>
+                    <p>
+                    I am passionate about my craft and put pride into the work I do. I strive to do the best job I can and make sure that what I have finished is of a high quality, but at the same time I know when to "ship it". I pride my self with the ability to learn quickly and jump into a project.
+                    </P>
                 </section>
-                <section id="about-facts" style="width:85%">
-                    <h3>Facts</h3>
-                    <hr>
-                    <ul>
-                        <li> Lorem ipsum dolor sit amet </li>
-                        <li> Sed convallis mi </li>
-                        <li> Vivamus efficitur, purus ac</li>
-                        <li> Lorem ipsum dolor sit amet </li>
-                        <li> Sed convallis mi </li>
-                        <li> Vivamus efficitur, purus ac</li>
-                        <li> Lorem ipsum dolor sit amet </li>
-                        <li> Sed convallis mi </li>
-                        <li> Vivamus efficitur, purus ac</li>
-                    <ul>
-                </section>
-                <div style="display:flex; flex-flow:row;  justify-content: flex-start;">
-                    <section id="about-skills" style="width:35%;">
+                <div style="display:flex; flex-flow:row;  justify-content: flex-start; width:85%;">
+                    <section id="about-facts">
+                        <h3>Facts</h3>
+                        <hr>
+                        <ul>
+                            <li>I've lived in Montreal, Quebec.</li>
+                            <li>I will read a lot of useless articles and retain knowledge about things most shoudln't.</li>
+                            <li>I've never broken a bone.</li>
+                            <li>I used to wear shorts and walk to class...in the middle of winter....in Vermont.</li>
+                            <li>I can grow a great beard (if I do say so my self) but I can't grow hair on the top of my head.</li>
+                            <li>I've tried learning French but I would say it has been a failure. Je suis un annanas.</li>
+                            <li>I will travel Europe someday.</li>
+                            <li>I live off caffeine.</li>
+                            <li>I'll try most things once.</li>
+                            <li>Often times I'll fail, but it's Ok.</li>
+                        <ul>
+                    </section>
+                    <section id="about-skills" style="width:35%; margin:0 0 0 auto">
                         <h3>Skills</h3>
                         <hr>
                         <div style="width:90%; overflow:hidden;">
                             <div style="display:inline;">
                                 <div class="skillbar" style="width: 85%;background-color: blue;display: inline-block;padding: 5px;"><label>C#</label></div>
-                                <div style="">85%</div>
+                                    <div style="">85%</div>
                             </div>
                         </div>
                     </section>
-                    <section id="about-contact" style="width:45%;padding-left:5%;">
+                </div>
+                <div style="display: flex;justify-content: flex-end;width: 85%;">
+                    <section id="about-contact">
                         <h3>Reach Out</h3>
                         <hr>
                         <a href="mailto:cjweiner@gmail.com" class="social-links-menu" target="_blank" title="email">
                             <span class="genericon genericon-mail" style="font-size:45px;width:45px;height:45px;"></span>
                         </a>
                         {% for social in site.social %}
-                        <a href="{{ social.url }}" class="social-links-menu" target="_blank" title="{{ social.desc }}">
-                            <span class="genericon genericon-{{ social.icon }}" style="font-size:45px;width:45px;height:45px;"></span>
-                        </a>
+                            <a href="{{ social.url }}" class="social-links-menu" target="_blank" title="{{ social.desc }}">
+                                <span class="genericon genericon-{{ social.icon }}" style="font-size:45px;width:45px;height:45px;"></span>
+                            </a>
                         {% endfor %}
                     </section>
-                    <div></div>
                 </div>
-            </div>
         </div>
     </div>
 </section>
