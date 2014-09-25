@@ -247,7 +247,7 @@ img {
 	font-weight: 700;
 	line-height: 1.15em;
 	font-size: 4.5em;
-	margin: 0;
+	margin-top: 0;
 }
 
 .homepage-image{
@@ -707,4 +707,31 @@ pre code {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+#about-who p{
+	color: #eee;
+}
+
+#about-who a{
+	color:#3F3F3F;
+}
+
+#about-content-right{
+	text-align:left;
+	display: inline-block;
+	vertical-align:top;
+	width:50%;
+	background-color:rgba(0,0,0,0.9);
+	padding:2em;
+	border-radius:5%;
+	-moz-box-shadow: 0px 0px 100px 0px #eee;
+	-webkit-box-shadow: 0px 0px 100px 0px #eee;
+	box-shadow: 0px 0px 100px 0px #eee;
+}
+
+.about-content-right-grid{
+	display:flex; 
+	flex-flow:row; 
+	justify-content: flex-start;
 }
