@@ -1,10 +1,16 @@
-<div style="clear:both;"></div>
-<section id="homepage-about" class="clean"  data-stellar-horizontal-offset="50" data-stellar-background-ratio="0.5">
-    <a id="about"></a>
-    <div class="homepage-fullscreen-image"style="-webkit-filter:contrast(150%);filter:contrast(150%);background-image: url(/assets/images/metro1.jpg)" ></div>
-    <div class="homepage-container-about">
-        <h1 class="homepage-quote">About Me</h1>
-        <div class="homepage-about-content">
+---
+layout: default
+title: About
+image: "/assets/images/metro1.jpg"
+socialHeader: false
+---
+
+<header id="aboutpage" class="clean" style="width:100%;height:100%;" data-stellar-background-ratio="0.5">
+    <div class="fullscreen-image aboutpage-fullscreen-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %})" ></div>
+    {% include top.html %}
+    <div class="aboutpage-container">
+        <h1 class="aboutpage-quote">About Me</h1>
+        <div class="aboutpage-content">
             <div id="about-content-left" style="display:inline-block;margin-right: 40px;">
                 <ul class="image-list">
                     <li>
@@ -23,13 +29,13 @@
                     <h3>I Am</h3>
                     <hr>
                     <p>
-                    A Software Developer, Gamer and Maker. I was born and raised in Western Massachusetts and grew up in a small town. I attended <a href="http://champlain.edu">Champlain College</a> in Burlington Vt where I graduated in 2012 with a Bachelors in Game Programming. I have been doing this software development thing now for seven years.
+                        A Software Developer, Gamer and Maker. I was born and raised in Western Massachusetts and grew up in a small town. I attended <a href="http://champlain.edu">Champlain College</a> in Burlington Vt where I graduated in 2012 with a Bachelors in Game Programming. I have been doing this software development thing now for seven years.
                     </p>
                     <p>
-                    When I'm not at work I am working on side projects. Outside of programming I love to enjoy a good beer and catch a game of hockey on the TV. If I'm not watching hockey or tinkering with a side project I'm likely gaming: FPS, Strategy, or even just a casual Puzzler, I enjoy them all.
+                        When I'm not at work I am working on side projects. Outside of programming I love to enjoy a good beer and catch a game of hockey on the TV. If I'm not watching hockey or tinkering with a side project I'm likely gaming: FPS, Strategy, or even just a casual Puzzler, I enjoy them all.
                     </P>
                     <p>
-                    I am passionate about my craft and put pride into the work I do. I strive to do the best job I can and make sure that what I have finished is of a high quality, but at the same time I know when to "ship it". I pride my self with the ability to learn quickly and jump into a project.
+                        I am passionate about my craft and put pride into the work I do. I strive to do the best job I can and make sure that what I have finished is of a high quality, but at the same time I know when to "ship it". I pride my self with the ability to learn quickly and jump into a project.
                     </P>
                 </section>
                 <div class="about-content-right-grid">
@@ -47,7 +53,7 @@
                             <li>I live off caffeine.</li>
                             <li>I'll try most things once.</li>
                             <li>Often times I'll fail, but it's Ok.</li>
-                        <ul>
+                        </ul>
                     </section>
                     <section id="about-skills" style="width:35%; margin:0 2em;">
                         <h3>Skills</h3>
@@ -55,7 +61,7 @@
                         <div style="width:90%; overflow:hidden;">
                             <div style="display:inline;">
                                 <div class="skillbar" style="width: 85%;background-color: blue;display: inline-block;padding: 5px;"><label>C#</label></div>
-                                    <div style="">85%</div>
+                                <div style="">85%</div>
                             </div>
                         </div>
                     </section>
@@ -68,12 +74,13 @@
                             <span class="genericon genericon-mail" style="font-size:45px;width:45px;height:45px;"></span>
                         </a>
                         {% for social in site.social %}
-                            <a href="{{ social.url }}" class="social-links-menu" target="_blank" title="{{ social.desc }}">
-                                <span class="genericon genericon-{{ social.icon }}" style="font-size:45px;width:45px;height:45px;"></span>
-                            </a>
+                        <a href="{{ social.url }}" class="social-links-menu" target="_blank" title="{{ social.desc }}">
+                            <span class="genericon genericon-{{ social.icon }}" style="font-size:45px;width:45px;height:45px;"></span>
+                        </a>
                         {% endfor %}
                     </section>
                 </div>
-        </div>
+            </div>
+         </div>
     </div>
-</section>
+</header>
