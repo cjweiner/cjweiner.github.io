@@ -1,4 +1,5 @@
 # Dependencies
+markdown: redcarpet
 highlighter: pygments
 
 # Permalinks
@@ -10,6 +11,7 @@ title: 'CoreyWeiner'
 tagline:  "The world is full of 0's and 1's"
 description: 'My personal website'
 url: http://corey-weiner.com
+logo: "/assets/images/icon.png"
 paginate_path: /llc/page:num
 commentsystem: disqus
 disqus: example
@@ -22,6 +24,10 @@ author:
   name: 'Corey Weiner'
   url: 	http://www.twitter.com/cjweiner
 
+blog:
+  title: 'Live, Laugh, Code!'
+
+
 paginate: 5
 
 icon: /assets/images/icon.png
@@ -31,34 +37,51 @@ social:
   - icon:	twitter
     url:	https://twitter.com/cjweiner
     desc:	Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
 
   - icon:	github
     url:	https://github.com/cjweiner
     desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
 
-  - icon: googleplus-alt
+  - icon: google-plus
     url: https://google.com/+CoreyWeiner09
     desc: Add me to your circle
+    share_url:
+    share_title:
+    share_link:
 
-  - icon: linkedin-alt
+  - icon: linkedin-square
     url: https://www.linkedin.com/pub/corey-weiner/26/759/348
     desc: Connect with me on LinkedIn
+    share_url:
+    share_title:
+    share_link:
 
 menu:
   - title: Home
     url: /
+    visibleOnHomepage: false
 
   - title: About
-    url: /#about
+    url: /about
+    visibleOnHomepage: true
 
   - title: Portfolio
     url: /portfolio
+    visibleOnHomepage: true
 
   - title: Blog
     url: /llc
+    visibleOnHomepage: true
 
   - title: Contact
-    url: /#contact
+    url: /contact
+    visibleOnHomepage: true
 
 copyright:
    author: Weiner

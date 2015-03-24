@@ -1,0 +1,25 @@
+<div class="custom-links">
+    {% for social in site.social %}
+        {% if social.url %}
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}">
+                <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+            {% if forloop.last == false%}
+                &nbsp;&#8226;&nbsp;
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% if page.pageTitle != "home"%}
+        {% for menuItem in site.menu %}
+            {% if menuItem.visibleOnHomepage %}
+                {% if forloop.index == 2%}
+                &nbsp;&#8226;&nbsp;
+                {% endif %}
+                <a class="menu-links" href="{{ menuItem.url }}">{{ menuItem.title }}</a>
+                {% if forloop.last == false%}
+                &nbsp;&#8226;&nbsp;
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>

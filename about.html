@@ -1,93 +1,65 @@
 ---
 layout: default
 title: About
+pageTitle: about
 image: "/assets/images/metro1.jpg"
 socialHeader: false
+permalink: /about/
 ---
 
-<header id="aboutpage" class="clean" style="width:100%;height:100%;" data-stellar-background-ratio="0.5">
-    <div class="fullscreen-image aboutpage-fullscreen-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %})" ></div>
-    {% include top.html %}
-    <div class="aboutpage-container">
-        <h1 class="aboutpage-quote">About Me</h1>
-        <div class="aboutpage-content">
-            <div id="about-content-left" style="display:inline-block;margin-right: 40px;">
-                <ul class="image-list">
-                    <li>
-                        <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200" align="" style="z-index: 5;position: relative;">
-                    </li>
-                    <li style="position: relative;left: 40px;top: -60px;">
-                        <img class="image-container1" src="/assets/images/code1.jpg">
-                    </li>
-                    <li style="position: relative;left: 0px;top: -116px;">
-                        <img class="image-container2" src="/assets/images/code2.jpg">
-                    </li>
-                </ul>
-            </div>
-            <div class="about-content-right-outer">
-                <div id="about-content-right">
-                    <div class="about-content-right-grid">
-                        <section id="about-who">
-                            <h3>I Am</h3>
-                            <hr>
-                            <p>
-                                A Software Developer, Gamer and Maker. I was born and raised in Western Massachusetts and grew up in a small town. I attended <a href="http://champlain.edu">Champlain College</a> in Burlington Vt where I graduated in 2012 with a Bachelors in Game Programming. I have been doing this software development thing now for seven years.
-                            </p>
-                            <p>
-                                When I'm not at work I am working on side projects. Outside of programming I love to enjoy a good beer and catch a game of hockey on the TV. If I'm not watching hockey or tinkering with a side project I'm likely gaming: FPS, Strategy, or even just a casual Puzzler, I enjoy them all.
-                            </P>
-                            <p>
-                                I am passionate about my craft and put pride into the work I do. I strive to do the best job I can and make sure that what I have finished is of a high quality, but at the same time I know when to "ship it". I pride my self with the ability to learn quickly and jump into a project.
-                            </P>
-                        </section>
-                    </div>
-                    <div class="about-content-right-grid">
-                        <section id="about-facts">
-                            <h3>Facts</h3>
-                            <hr>
-                            <ul>
-                                <li>I've lived in Montreal, Quebec.</li>
-                                <li>I will read a lot of useless articles and retain knowledge about things most shoudln't.</li>
-                                <li>I've never broken a bone.</li>
-                                <li>I used to wear shorts and walk to class...in the middle of winter....in Vermont.</li>
-                                <li>I can grow a great beard (if I do say so my self) but I can't grow hair on the top of my head.</li>
-                                <li>I've tried learning French but I would say it has been a failure. Je suis un annanas.</li>
-                                <li>I will travel Europe someday.</li>
-                                <li>I live off caffeine.</li>
-                                <li>I'll try most things once.</li>
-                                <li>Often times I'll fail, but it's Ok.</li>
-                            </ul>
-                        </section>
-                        <section id="about-skills" style="width:35%; margin:0 2em;">
-                            <h3>Skills*</h3>
-                            <hr>
-                            <div>
-                                <ul class="graph">
-                                    <li class="percent85"><div>C# - 85%</div></li>
-                                    <li class="percent70"><div>CSS - 70%</div></li>
-                                    <li class="percent50"><div>CSS - 70%</div></li>
-                                    <li class="percent100"><div>Beer drinking - 100%</div></li>
-                                </ul>
-                            </div>
-                            <label style="font-size:12px;">*Measured in beard length (flucuates based on the season)</label>
-                        </section>
-                    </div>
-                    <div class="about-content-right-grid" style="justify-content: flex-end;">
-                        <section id="about-contact">
-                            <h3>Reach Out</h3>
-                            <hr>
-                            <a href="mailto:cjweiner@gmail.com" class="social-links-menu" target="_blank" title="email">
-                                <span class="genericon genericon-mail about-social-icons"></span>
-                            </a>
-                            {% for social in site.social %}
-                            <a href="{{ social.url }}" class="social-links-menu" target="_blank" title="{{ social.desc }}">
-                                <span class="genericon genericon-{{ social.icon }} about-social-icons"></span>
-                            </a>
-                            {% endfor %}
-                        </section>
-                    </div>
-                </div>
-            </div>
-         </div>
-    </div>
+{% include teaser.html%}
+<header class="blog-header">
+    {% if site.logo %}
+        <a class="blog-logo" href="{{site.url}}" style="background-image: url('{{ site.logo }}')"></a>
+    {% endif %}
+    <h1 class="blog-title">{% if page.title %}{{ page.title }}{% else %}{{site.title}}}{% endif %}</h1>
+    <h2 class="blog-description">"{{ site.tagline }}"</h2>
+    {% include socialnav.html %}
 </header>
+
+<main class="content" role="main">
+    <h2>I Am</h2>
+    <div class="container-top">
+
+        <div class="about-pic">
+            <img class="circular" src="https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200" align="" style="z-index: 5;position: relative;">
+        </div>
+        <div class="about-content">
+
+            <p>
+                A Software Developer, Gamer and Maker. I was born and raised in Western Massachusetts. I attended <a href="http://champlain.edu">Champlain College</a> in Burlington VT where I graduated in 2012 with a Bachelors in Game Programming. I have been doing this software development thing now for seven years.
+            </p>
+        </div>
+        <div>
+            <p>
+                When I'm not at work I am working on side projects. Outside of programming I love to enjoy a good beer and catch a game of hockey on the TV. If I'm not watching hockey or tinkering with a side project I'm likely gaming: FPS, Strategy, or even just a casual Puzzler, I enjoy them all.
+            </P>
+            <p>
+                I am passionate about my craft and put pride into the work I do. I strive to do the best job I can and make sure that what I have finished is of a high quality, but at the same time I know when to "ship it". I pride my self with the ability to learn quickly and jump into a project.
+            </P>
+        </div>
+    </div>
+<!--    <div class="container-bottom">
+        <div class="about-subcontent">
+            <h2>Facts</h2>
+            <ul>
+                <li>I've lived in Montreal, Quebec.</li>
+                <li>I will read a lot of useless articles and retain knowledge about things most shoudln't.</li>
+                <li>I've never broken a bone.</li>
+                <li>I used to wear shorts and walk to class...in the middle of winter....in Vermont.</li>
+                <li>I can grow a great beard (if I do say so my self) but I can't grow hair on the top of my head.</li>
+                <li>I've tried learning French but I would say it has been a failure. Je suis un annanas.</li>
+                <li>I will travel Europe someday.</li>
+                <li>I live off caffeine.</li>
+            </ul>
+            <h2>Skills</h2>
+            <ul class="graph">
+                <li class="percent85"><div>C# - 85%</div></li>
+                <li class="percent70"><div>CSS - 70%</div></li>
+                <li class="percent50"><div>CSS - 70%</div></li>
+                <li class="percent100"><div>Beer drinking - 100%</div></li>
+            </ul>
+            <label style="font-size:12px;">*Measured in beard length (flucuates based on the season)</label>
+        </div>
+    </div>-->
+</main>
