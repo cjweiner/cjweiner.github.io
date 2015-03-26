@@ -19,6 +19,10 @@ $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
   @media only screen and (max-width: $breakpoint + px)
     @content
 
+@mixin respond-to-min($breakpoint)
+  @media only screen and (min-width: $breakpoint + px)
+    @content
+
 
 // Only needed for syntax highlighting
 %vertical-rhythm
@@ -794,6 +798,8 @@ pre
     opacity: 0.75
     margin-top: 10px
     margin-bottom: 0
+    @include respond-to(600)
+      font-size: 24px
   .quote-author
     text-align: center
     margin-top: 5px
@@ -807,3 +813,86 @@ pre
       color: #999
       &:hover
         color: #333
+
+.menu
+  display: block
+  cursor: pointer
+  background-color: rgba(26, 26, 26, 0.35)
+  width: 30px
+  height: 30px
+  top: 12px
+  left: 12px
+  padding-top: 5px
+  padding-left: 5px
+  z-index: 1001
+  transition-duration: .5s
+  position: fixed
+  &+input
+    display: none
+    &+*
+      display: none
+    &:checked+*
+      display: block
+  span
+    color: #eee
+    font-size: $rs
+    height: 20px
+    width: 20px
+    opacity: 1
+    margin-left: 5px
+    margin-top: 5px
+  a:hover
+    -webkit-opacity: 0.75
+      opacity: 0.75
+  &:hover,&:active
+    background-color: #1a1a1a
+.menu-content
+  width: 125px
+  top: 47px
+  left: 12px
+  padding-top: 5px
+  padding-bottom: 2px
+  padding-left: 20px
+  padding-right: 20px
+  position: fixed
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  background-color: rgba(26, 26, 26, 1)
+  text-align: center
+  z-index: 1000
+  @include respond-to(899)
+    width: 100%
+    top: 0px
+    left: 0px
+    padding: 10px 0 0 0
+    //position: relative
+  .menu-title
+    display: none
+  p
+    margin-top: 10px
+    margin-bottom: 10px
+    color: #515151
+  a
+    text-transform: uppercase
+    text-decoration: none
+    -moz-osx-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased
+    font-smoothing: antialiased
+    letter-spacing: 1.2pt
+    font-size: 12px
+    font-weight: 600
+    font-style: normal
+    line-height: 35px
+    display: block
+    color: gray
+    &:hover
+      color: #fff
+  hr
+    margin: 15px 0
+    border-top: 1px solid rgb(131, 131, 131)
+    border-bottom: 0px
+  >.social-links-menu
+    display: inline-block
+    margin-left: 10px
+    .fa
+      font-size: $rs
+      vertical-align: top
