@@ -734,7 +734,7 @@ pre
   display: -webkit-flex
   display: flex
   justify-content: space-around
-  flex-flow: wrap
+  @include flex-flow(wrap)
   .about-pic
     width: $rs*12.5
     min-width: $rs*12.5
@@ -799,15 +799,15 @@ pre
     ol li
       list-style-type: decimal
     .skills
-      display: flex
+      @include display(flex)
       .vertical-hr
         width: 4px
         background-color: #dededc
       .graph
-        display: flex
+        @include display(flex)
         flex-direction: row
         justify-content: flex-start
-        flex-wrap: wrap
+        @include flex-flow(wrap)
         max-width: 640px
         padding-top: 15px
         padding-bottom: 15px
