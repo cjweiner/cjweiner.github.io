@@ -22,4 +22,8 @@ Raspberry Pi home server (more on this later). When I am not developing or looki
 tech I can usual be found playing video games or board games.
 
 If you'd like to reach out, feel free to send me an email or hit me up on twitter.I hope you will
-join me for the ride on this blog
+join me for the ride on this blog.
+
+* Test
+* Test 2
+* Test 3
