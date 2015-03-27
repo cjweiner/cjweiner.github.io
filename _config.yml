@@ -71,16 +71,8 @@ menu:
     url: /about
     visibleOnHomepage: true
 
-  - title: Portfolio
-    url: /portfolio
-    visibleOnHomepage: true
-
   - title: Blog
     url: /llc
-    visibleOnHomepage: true
-
-  - title: Contact
-    url: /contact
     visibleOnHomepage: true
 
 copyright:

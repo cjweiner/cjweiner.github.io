@@ -1,3 +1,10 @@
 <div class="teaserimage">
     <div class="teaserimage-image filter-blur" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %})"></div>
+    {% if page.image_credit_url and page.image_credit %}
+        <label class="photo-credit">
+            <span class="text">
+                <a href="{{page.image_credit_url}}">Photo by: {{page.image_credit}}</a>
+            </span>
+        </label>
+    {% endif %}
 </div>
