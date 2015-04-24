@@ -2,10 +2,12 @@
 layout: default
 title: 'Live, Laugh, Code!'
 pageTitle: blog
+image: "/assets/images/blogCover.jpg"
+
 ---
 
 <div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}></div>
+    <div class="teaserimage-image" {% if page.image %}style="background-image: url({{ page.image }})" {% else site.cover %}style="background-image: url({{ site.cover }})"{% endif %}></div>
 </div>
 
 <header class="blog-header">
@@ -35,7 +37,7 @@ pageTitle: blog
                 </section>
                 <div class="post-meta">
                     <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-                    <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+                    <!--<span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
                 </div>
             </div>
         </article>
