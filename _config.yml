@@ -10,7 +10,7 @@ permaklink: /404.html
 title: 'CoreyWeiner'
 tagline:  "The world is full of 0's and 1's"
 description: 'My personal website'
-url: http://corey-weiner.com
+url: https://corey-weiner.com
 logo: "/assets/images/icon.png"
 paginate_path: /llc/page:num
 commentsystem: disqus
@@ -23,7 +23,7 @@ gems:
 author:
   name: 'Corey Weiner'
   image: https://s.gravatar.com/avatar/a8002a37119322b475cbf5a10beae6e0?s=200
-  url: 	http://www.twitter.com/cjweiner
+  url: 	https://www.twitter.com/cjweiner
 
 blog:
   title: 'Live, Laugh, Code!'
@@ -38,7 +38,7 @@ social:
   - icon:	twitter
     url:	https://twitter.com/cjweiner
     desc:	Follow me on twitter
-    share_url: http://twitter.com/share
+    share_url: https://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
@@ -79,6 +79,6 @@ menu:
 copyright:
    author: Weiner
    type_title: Some rights reserved
-   type_url: http://creativecommons.org/licenses/by-nc/2.5
+   type_url: https://creativecommons.org/licenses/by-nc/2.5
 
 google_analytics: UA-53933218-1
